@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="091a3745-7a1b-49ac-8649-2a8f95e60aa5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main/src/scala/MarkovChain.scala" afterPath="$PROJECT_DIR$/main/src/scala/com/a5/numberguesser/MarkovChain.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/a5/numberguesser/Trainer.scala" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/main/src/scala/com/a5/numberguesser/MarkovChain.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/a5/numberguesser/MarkovChain.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NumberGuesser.iml" afterPath="$PROJECT_DIR$/NumberGuesser.iml" />
     </list>
     <ignored path="NumberGuesser.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,19 +63,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MarkovChain.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/src/scala/com/a5/numberguesser/MarkovChain.scala">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="21" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.0">
+            <state line="6" column="140" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="MarkovChain.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/a5/numberguesser/MarkovChain.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="159" selection-end="159" vertical-scroll-proportion="0.096">
+            <state line="26" column="34" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Trainer.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/a5/numberguesser/Trainer.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="40" selection-start="761" selection-end="761" vertical-scroll-proportion="0.48">
               <folding />
             </state>
           </provider>
@@ -95,8 +106,11 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/main/src/scala/MarkovChain.scala" />
-        <option value="$PROJECT_DIR$/main/src/scala/com/a5/numberguesser/MarkovChain.scala" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/main/src/scala/com/a5/numberguesser/MarkovChain.scala" />
+        <option value="$PROJECT_DIR$/main/src/scala/com/a5/numberguesser/Trainer.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/a5/numberguesser/MarkovChain.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/a5/numberguesser/Trainer.scala" />
       </list>
     </option>
   </component>
@@ -178,11 +192,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -467,16 +481,23 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/src/scala/com/a5/numberguesser/MarkovChain.scala">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="21" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.0">
+        <state line="6" column="140" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/a5/numberguesser/MarkovChain.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="159" selection-end="159" vertical-scroll-proportion="0.096">
+        <state line="26" column="34" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/a5/numberguesser/Trainer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="40" selection-start="761" selection-end="761" vertical-scroll-proportion="0.48">
           <folding />
         </state>
       </provider>

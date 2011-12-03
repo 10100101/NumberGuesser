@@ -7,15 +7,15 @@ case class Link[T](from: State[T], to: State[T], var count: Double) {
 case class State[T](value: T, var links: List[Link[T]]) {
   import util.Random
 
-  private def sumLinkCounts = links.foldLeft(0.0)((sum, link) => sum + link.count)
+  def sumLinkCounts() = links.foldLeft(0.0)((sum, link) => sum + link.count)
 
-  private def normalizeLinkCounts() {
-    links.foreach(_ / sumLinkCounts)
+  def normalizeLinkCounts() {
+    links.foreach((link) => {link.count /= sumLinkCounts})
   }
 
   def selectNext() : Option[State[T]] = {
-    val random = Random.nextInt(sumLinkCounts)
-    var lowerCount = 0
+    val random = Random.nextDouble()
+    var lowerCount = 0.0
     def rangePredicate(link: Link[T]): Boolean = {
       if (random >= lowerCount && random <= link.count+lowerCount) {
         return true
@@ -25,7 +25,7 @@ case class State[T](value: T, var links: List[Link[T]]) {
     }
     links.find(rangePredicate) match {
       case Some(link) => Some(link.to)
-      case None => None
+      case None => Some(links.last.to)
     }
   }
 
@@ -46,11 +46,16 @@ case class State[T](value: T, var links: List[Link[T]]) {
 
 }
 
-case class MarkovChain[T](var states: List[State[T]])
+case class MarkovChain[T](var states: List[State[T]]) {
+
+  def selectState(value: T) = {
+    states.find(_.value == value)
+  }
+}
 
 object MarkovChain {
 
-  def completeChain(size: Int, defaultCount: Int): MarkovChain[Int] = {
+  def completeChain(size: Int, defaultCount: Double): MarkovChain[Int] = {
     val states = for (i <- 1 to size) yield State(i, List())
     for (from <- states) {
       var links : List[Link[Int]] = Nil
@@ -58,6 +63,7 @@ object MarkovChain {
         links = Link(from, to, defaultCount) :: links 
       }
       from.links = links
+      from.normalizeLinkCounts()
     }
 
     MarkovChain(states.toList)
